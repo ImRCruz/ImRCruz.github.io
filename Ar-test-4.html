@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+</head>
+
+<body>
+	<a-scene
+  arjs
+  embedded
+  renderer="logarithmicDepthBuffer: true;"
+  vr-mode-ui="enabled: false"
+  gesture-detector
+  id="scene"
+>
+  <a-assets>
+    <a-asset-item
+      id="YGAF"
+      src="..\assets\AR-Test.glb"
+    >
+    </a-asset-item>
+  </a-assets>
+
+  <a-marker
+    preset="hiro"
+    raycaster="objects: .clickable"
+    emitevents="true"
+    cursor="fuse: false; rayOrigin: mouse;"
+    id="markerA"
+  >
+    <a-entity
+      id="YGAF-model"
+      gltf-model="#YGAF"
+      position="0 0 0"
+      scale="0.05 0.05 0.05"
+      class="clickable"
+      gesture-handler
+    >
+    </a-entity>
+  </a-marker>
+  <a-entity camera></a-entity>
+</a-scene>
+	
+</body>
+</html>
