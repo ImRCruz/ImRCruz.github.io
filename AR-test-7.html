@@ -5,10 +5,13 @@
 <title>Untitled Document</title>
 </head>
 
-<!-- import aframe and then ar.js with image tracking / location based features -->
+<!-- import aframe and then ar.js with image tracking / location based features 
 <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-
+-->
+	<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+	<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+	
 <!-- style for the loader -->
 <style>
   .arjs-loader {
@@ -55,16 +58,17 @@
       smoothTolerance=".01"
       smoothThreshold="5"
     >
-      <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
-      <!-- gltf-model="..\assets\AR-Test.glb" -->
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-<!--
+		<!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity
+     
+		gltf-model="..\assets\AR-Test.glb" 
+		<a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box> 
+		-->
+
       <a-entity
         gltf-model="..\assets\AR-Test.glb" 
         scale="2 2 2"
         position="0 0 0"
       >
--->
       </a-entity>
     </a-nft>
     <!-- static camera that moves according to the device movemenents -->
