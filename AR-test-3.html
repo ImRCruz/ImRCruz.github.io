@@ -10,6 +10,7 @@
           gltf-model="./assets/AR-Test.glb"
         ></a-entity>
 
+preset="hiro"
 -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
@@ -17,7 +18,15 @@
    vr-mode-ui="enabled: false"
    gesture-detector
    id="scene">
-      <a-marker preset="hiro">
+      <a-marker	id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="arjs-studio/assets/marker.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"				
+				>
         <a-entity
           scale="1 1 1"
 		  position="0 0.5 0"
