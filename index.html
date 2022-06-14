@@ -1,49 +1,18 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
-
-<body>
-		<a href="june01.html"><h2>June 1st</h2></a><a href="ygaf-assets/YGAF-2D.png">Use YGAF-2D Marker</a><br><br>
-
-		<a href="mind-ar-project/index.html"><h2>MindAR Project Index.html</h2></a><a href="/markers/TechServices_large (resize).png">Use TechServices_large (resize) Marker</a><br><br>
-
-	
-	
-<!--	
-	<a href="AR-test.html">AR-Test from "ar-js-org.github.io/AR.js-Docs/image-tracking/"</a><br>
-	<a href="AR-test-2.html">AR Test 2 from "ar-js-org.github.io/AR.js-Docs/"</a><br>
-	<a href="AR-test-4.html">AR Test 4 Marker Based wih gestures</a><br>
-	<a href="AR-test-5.html">AR Test 5</a><br>
-	<a href="AR-test-6.html">AR Test 6</a><br>
-
-	<a href="AR-test-3.html"><h2>AR Test 3</h2></a><a href="markers/hiro.png">Use Hiro Marker</a><br><br>
-
-	<a href="AR-test-7.html"><h2>AR Test 7 Marker</h2></a><a href="markers/city-hall.jpeg">Use City Hall Marker</a><br><br>
-
-	<a href="AR-test-8.html"><h2>AR Test 8</h2></a><a href="markers/hiro.png">Use Hiro Marker</a><br><br>
-
-	<a href="ar-test-9.html"><h2>AR Test 9 Marker</h2></a><a href="markers/pinball.jpg">Use Pinball Marker</a><br><br>
-	
-	<a href="AR-test-10.html"><h2>AR Test 10 Marker</h2></a><a href="markers/city-tree.png">Use City Tree Marker</a><br><br>
-	
-	<a href="AR-test-11.html"><h2>AR Test 11 Marker</h2></a><a href="markers/city-tree.png">Use City Tree Marker</a><br><br>
-
-	<a href="AR-test-12.html"><h2>AR Test 12 Marker</h2></a><a href="markers/hiro.png">Use Hiro Marker</a><br><br>
-	
-	<a href="AR-test-13.html"><h2>AR Test 13 Marker</h2></a><a href="markers/TechServices_large.png">Use YGAF Marker</a><br><br>
-	
-	<a href="arjs-studio/index.html"><h2>AR.JS Studio Test</h2></a><a href="markers/city-tree.png">Use City Tree Marker</a><br><br>
-
-	<a href="vr-model-test.html"><h2>VR Model Inspector (ctrl alt i)</h2></a><br>
-	
-	
-	<hr>
-	<a href="three.js/examples/threejs-test.html"><h2>Three.JS Test</h2></a><a href="markers/TechServices_large.png">Use City Tree Marker</a><br><br>
-
--->
-	
-</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image.prod.js"></script>
+	<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image.aframe.js"></script>
+  </head>
+  <body>
+    <a-scene mindar-image="imageTargetSrc: /mind-ar-projects/targets.mind;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-plane color="blue" opaciy="0.5" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+      </a-entity>
+    </a-scene>
+  </body>
 </html>
