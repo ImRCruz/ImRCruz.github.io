@@ -8,7 +8,7 @@
 <body>
 	<style>
 		body{
-			background: #009158;
+			background: #000;
 			color: white;
 			font-family: "Myriad-Pro", Helvetica, Arial, "sans-serif";
 		}
@@ -26,71 +26,64 @@
 		.cityLogo{
 			height: 20%; 
 			width: 20%;
-			
 		}
 		.cityMarker{
 			height: 35%; 
 			width: 35%;
-			margin-top: -50px;
-			padding: 0px;
 		}
 		p{
 			text-align: center; 
-			padding-top: 60px;
+			
 		}
 		h5{
 			text-align: center; 
 			display: block;
-			margin: 0px auto;
-			
+			margin: 0px auto;		
 		}
+		
 		/*  MOBILE STYLING */
-@media (width <= 500px)  {
-  		
-		body{
-			background: #000000;
-			color: white;
-			font-family: "Myriad-Pro", Helvetica, Arial, "sans-serif";
+		@media (width <= 500px)  {
+
+				body{
+					background: #000000;
+					color: white;
+					font-family: "Myriad-Pro", Helvetica, Arial, "sans-serif";
+				}
+				.header {
+					text-align: center; 
+					display: block;
+					margin: 0px auto;
+					font-size: 1.5em;
+				}
+				.link {
+					text-align: center; 
+					font-size: 1em;
+				}
+				.cityLogo{
+					height: 75%; 
+					width: 75%;			
+				}
+				.cityMarker{
+					height: 100%; 
+					width: 100%;
+					margin-top: 10px;
+					padding: 0px;
+				}
+				p {
+					text-align: center; 
+				}
+				h5{
+					text-align: center; 
+					display: block;
+					margin: 0px auto;
+					font-size: 1em;		
+				} 
 		}
-		.header {
-			text-align: center; 
-			display: block;
-			margin: 0px auto;
-			font-size: 1.5em;
-		}
-		.link {
-			text-align: center; 
-			font-size: 1em;
-		}
-		.cityLogo{
-			height: 75%; 
-			width: 75%;
-			
-		}
-		.cityMarker{
-			height: 100%; 
-			width: 100%;
-			margin-top: -50px;
-			padding: 0px;
-		}
-		p{
-			text-align: center; 
-			padding-top: 60px;
-		}
-		h5{
-			text-align: center; 
-			display: block;
-			margin: 0px auto;
-			font-size: 1em;
-			
-		}
-  
-}
 	</style>
 	
 	<p><img class="cityLogo" alt="City of Santa Clarita Logo" src="mind-ar-project/Informal Signature white.png"></p>
-	<h1 class="header">Welcome to the City of Santa Clarita's<br/>Augmented Reality Experience</h1><h5>(test)</h5>
-	<h3 class="link"><br>Visit <a href="https://city.sc/scan"><b>https://city.sc/scan</b></a> on your mobile device and scan the image below.</h3>	
+	<h1 class="header">Welcome to the<br/>Augmented Reality Experience</h1><h5>(test)</h5>
+	<p class="link"><br>Visit <a href="https://city.sc/scan"><b>city.sc/scan</b></a> on your mobile device and scan the image below.</p>	
 	<p><img class="cityMarker" alt="you got a friend city poster" src="mind-ar-project/TechServices_large (resize).png"></p>	
 
 </body>
